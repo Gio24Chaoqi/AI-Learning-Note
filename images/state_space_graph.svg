@@ -1,0 +1,45 @@
+<svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <rect x="0" y="0" width="700" height="320" fill="#fbfbfa"/>
+
+  <!-- Nodes -->
+  <circle cx="80" cy="160" r="26" fill="#d6e4dd" stroke="#3a3a3a" stroke-width="2"/>
+  <text x="80" y="165" text-anchor="middle" font-size="13">起点</text>
+
+  <circle cx="230" cy="80" r="24" fill="#f1ece0" stroke="#3a3a3a" stroke-width="2"/>
+  <text x="230" y="85" text-anchor="middle" font-size="13">A</text>
+
+  <circle cx="230" cy="240" r="24" fill="#f1ece0" stroke="#3a3a3a" stroke-width="2"/>
+  <text x="230" y="245" text-anchor="middle" font-size="13">B</text>
+
+  <circle cx="400" cy="120" r="24" fill="#f1ece0" stroke="#3a3a3a" stroke-width="2"/>
+  <text x="400" y="125" text-anchor="middle" font-size="13">C</text>
+
+  <circle cx="400" cy="220" r="24" fill="#f1ece0" stroke="#3a3a3a" stroke-width="2"/>
+  <text x="400" y="225" text-anchor="middle" font-size="13">D</text>
+
+  <circle cx="580" cy="160" r="26" fill="#e0d0d6" stroke="#3a3a3a" stroke-width="2"/>
+  <text x="580" y="165" text-anchor="middle" font-size="13">目标</text>
+
+  <!-- Edges with cost -->
+  <path d="M104 150 L208 92" stroke="#666" stroke-width="1.6" fill="none"/>
+  <text x="150" y="105" font-size="12" fill="#a03b2e">3</text>
+
+  <path d="M104 172 L208 232" stroke="#666" stroke-width="1.6" fill="none"/>
+  <text x="150" y="220" font-size="12" fill="#a03b2e">5</text>
+
+  <path d="M252 88 L378 118" stroke="#666" stroke-width="1.6" fill="none"/>
+  <text x="310" y="95" font-size="12" fill="#a03b2e">4</text>
+
+  <path d="M252 232 L378 222" stroke="#666" stroke-width="1.6" fill="none"/>
+  <text x="310" y="245" font-size="12" fill="#a03b2e">2</text>
+
+  <path d="M422 128 L558 158" stroke="#666" stroke-width="1.6" fill="none"/>
+  <text x="490" y="130" font-size="12" fill="#a03b2e">6</text>
+
+  <path d="M422 214 L558 172" stroke="#666" stroke-width="1.6" fill="none"/>
+  <text x="490" y="215" font-size="12" fill="#a03b2e">3</text>
+
+  <path d="M254 90 L400 210" stroke="#bbb" stroke-width="1.4" fill="none" stroke-dasharray="3 3"/>
+
+  <text x="350" y="300" text-anchor="middle" font-size="13" fill="#666">节点间的连线代表"操作/转移",数字是这一步的代价 —— 搜索就是在找一条从起点到目标、代价尽量小的路径</text>
+</svg>
