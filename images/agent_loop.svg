@@ -1,0 +1,35 @@
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <rect x="0" y="0" width="700" height="300" fill="#fbfbfa"/>
+
+  <!-- Agent box -->
+  <rect x="260" y="90" width="180" height="120" rx="10" fill="#d6e4dd" stroke="#3a3a3a" stroke-width="2.2"/>
+  <text x="350" y="125" text-anchor="middle" font-size="17" fill="#1f1f1f" font-weight="bold">智能体</text>
+  <text x="350" y="150" text-anchor="middle" font-size="12" fill="#444">(内部状态 / 目标 /</text>
+  <text x="350" y="167" text-anchor="middle" font-size="12" fill="#444">效用函数)</text>
+  <text x="350" y="192" text-anchor="middle" font-size="12" fill="#666">该做什么行动?</text>
+
+  <!-- Environment ring -->
+  <ellipse cx="350" cy="150" rx="320" ry="135" fill="none" stroke="#b8b0a2" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="350" y="20" text-anchor="middle" font-size="15" fill="#888">环境(不断变化)</text>
+
+  <!-- Sensors arrow in -->
+  <path d="M60 150 L255 130" fill="none" stroke="#2f6f4f" stroke-width="2.2" marker-end="url(#a1)"/>
+  <text x="130" y="115" text-anchor="middle" font-size="13" fill="#2f6f4f">感知(sensors)</text>
+
+  <!-- Effectors arrow out -->
+  <path d="M255 175 L60 190" fill="none" stroke="#a03b2e" stroke-width="2.2" marker-end="url(#a2)"/>
+  <text x="130" y="215" text-anchor="middle" font-size="13" fill="#a03b2e">行动(effectors)</text>
+
+  <text x="55" y="150" text-anchor="middle" font-size="22">🌍</text>
+
+  <defs>
+    <marker id="a1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2f6f4f"/>
+    </marker>
+    <marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#a03b2e"/>
+    </marker>
+  </defs>
+
+  <text x="350" y="270" text-anchor="middle" font-size="13" fill="#666">智能体不断循环: 感知环境 → 决定行动 → 影响环境 → 再次感知...</text>
+</svg>
